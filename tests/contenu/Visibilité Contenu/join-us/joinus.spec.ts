@@ -47,7 +47,7 @@ test.describe('Visibilité - Inside Extia page', () => {
 
     });
 
-    test('Bloc - Entête', async ({ page }) => {
+    test('Bloc - Intro', async ({ page }) => {
         await expect(page.getByRole('heading', { name: 'Rejoignez l’aventure Extia' })).toBeVisible();
         await expect(page.getByText('D’abord qui, ensuite quoi')).toBeVisible();
         await expect(page.getByText('Chez Extia, nous recrutons')).toBeVisible();

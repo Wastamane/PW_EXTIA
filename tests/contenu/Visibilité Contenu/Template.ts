@@ -53,7 +53,7 @@ test.describe('Visibilité - Inside Extia page', () => {
 
     });
 
-    test.describe('Partie Pied - Menntions légales', () => {
+    test.describe('Partie Pied - Mentions légales', () => {
         test.beforeEach(async ({ page }) => {
             await page.getByText('Ce site a été conçu avec pour').scrollIntoViewIfNeeded();
         });
