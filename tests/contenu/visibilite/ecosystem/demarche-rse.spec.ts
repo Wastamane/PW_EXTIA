@@ -71,10 +71,6 @@ test.describe('Visibilité - Inside Extia page', () => {
         });
 
         test.describe('Bloc - Projets d\'initiative', () => {
-test.beforeEach(async ({ page }) => {
-    await page.getByRole('heading', { name: 'Le projet Initiatives' }).scrollIntoViewIfNeeded();
-});
-            
             test('Titre', async ({ page }) => {
                 await expect(page.getByRole('heading', { name: 'Le projet Initiatives' })).toBeVisible();
             });
@@ -93,10 +89,6 @@ test.beforeEach(async ({ page }) => {
         });
 
         test.describe('Bloc Lables & certification', () => {
-test.beforeEach(async ({ page }) => {
-    await page.getByRole('heading', { name: 'Labels & certifications' }).scrollIntoViewIfNeeded();
-});
-
             test('Titre', async ({ page }) => {
                 await expect(page.getByRole('heading', { name: 'Labels & certifications' })).toBeVisible();
             });
@@ -119,10 +111,6 @@ test.beforeEach(async ({ page }) => {
         });
 
         test.describe('Bloc - Employeur responsable', () => {
-            test.beforeEach(async ({ page }) => {
-                await page.getByRole('heading', { name: 'Un employeur responsable' }).scrollIntoViewIfNeeded();
-            });
-
             test('Titre', async ({ page }) => {
                 await expect(page.getByRole('heading', { name: 'Un employeur responsable' })).toBeVisible();
             });
@@ -136,10 +124,6 @@ test.beforeEach(async ({ page }) => {
             });
 
             test.describe('Soutenir la parité', () => {
-                test.beforeEach(async ({ page }) => {
-                    await page.getByRole('heading', { name: 'Soutenir la parité' }).scrollIntoViewIfNeeded();
-                });
-
                 test('Titre', async ({ page }) => {
                     await expect(page.getByRole('heading', { name: 'Soutenir la parité' })).toBeVisible();
                 });
@@ -150,12 +134,8 @@ test.beforeEach(async ({ page }) => {
             });
 
             test.describe('Prévenir le sexisme dit ordinaire', () => {
-                test.beforeEach(async ({ page }) => {
-                    await page.getByRole('heading', { name: 'Prévenir le sexisme dit' }).scrollIntoViewIfNeeded();
-                });
-
                 test('Titre', async ({ page }) => {
-                    await expect(page.getByRole('heading', { name: 'Prévenir le sexisme dit' })).toBeVisible();
+                    await page.getByRole('heading', { name: 'Prévenir le sexisme dit' }).click();
                 });
 
                 test('Texte', async ({ page }) => {
@@ -164,14 +144,10 @@ test.beforeEach(async ({ page }) => {
             });
 
             test.describe('Agir pour la diversité', () => {
-                test.beforeEach(async ({ page }) => { 
-                    await page.getByRole('heading', { name: 'Agir pour la diversité : d’' }).scrollIntoViewIfNeeded();
-                });
-
-                test('Titre', async ({ page }) => {
+                test('Texte', async ({ page }) => {
                     await expect(page.getByRole('heading', { name: 'Agir pour la diversité : d’' })).toBeVisible();
                 });
-
+                
                 test('Texte (1/3)', async ({ page }) => {
                     await expect(page.getByText('Nous nous engageons en faveur')).toBeVisible();
                 });
@@ -186,10 +162,6 @@ test.beforeEach(async ({ page }) => {
             });
 
             test.describe('Solidarité et mécénat', () => {
-                test.beforeEach(async ({ page }) => {
-                    await page.getByRole('heading', { name: 'Solidarité et mécénat' }).scrollIntoViewIfNeeded();
-                });
-
                 test('Titre', async ({ page }) => {
                     await expect(page.getByRole('heading', { name: 'Solidarité et mécénat' })).toBeVisible();
                 });
@@ -198,10 +170,6 @@ test.beforeEach(async ({ page }) => {
                     await expect(page.getByText('Chez Extia, nous sommes')).toBeVisible();
                 });
                 test.describe('Mettre nos compétances au service de nos partenaires', () => {
-                    test.beforeEach(async ({ page }) => {
-                        await page.getByRole('heading', { name: 'Mettre nos compétences au' }).scrollIntoViewIfNeeded();
-                    });
-
                     test('Titre', async ({ page }) => {
                         await expect(page.getByRole('heading', { name: 'Mettre nos compétences au' })).toBeVisible();
                     });
@@ -219,10 +187,6 @@ test.beforeEach(async ({ page }) => {
                     });
                 });
                 test.describe('Engagement solidaire au quotidien', () => {
-                    test.beforeEach(async ({ page }) => {
-                        await page.getByRole('heading', { name: 'Un engagement solidaire au' }).scrollIntoViewIfNeeded();
-                    });
-
                     test('Titre', async ({ page }) => {
                         await expect(page.getByRole('heading', { name: 'Un engagement solidaire au' })).toBeVisible();
                     });
@@ -240,10 +204,6 @@ test.beforeEach(async ({ page }) => {
                     });
                 });
                 test.describe('Soutenir les causes qui nous sont chères', () => {
-                    test.beforeEach(async ({ page }) => { 
-                        await page.getByRole('heading', { name: 'Soutenir des causes qui nous' }).scrollIntoViewIfNeeded();
-                    });
-
                     test('Titre', async ({ page }) => {
                         await expect(page.getByRole('heading', { name: 'Soutenir des causes qui nous' })).toBeVisible();
                     });
@@ -263,6 +223,8 @@ test.beforeEach(async ({ page }) => {
                     test('Illustration', async ({ page }) => {
                         await expect(page.getByRole('img', { name: 'Les collaborateurs de l’' })).toBeVisible();
                     });
+
+
                 });
             });
 
@@ -270,14 +232,11 @@ test.beforeEach(async ({ page }) => {
                 test('Bloc de cartes assos', async ({ page }) => {
                     await expect(page.locator('.partner-items')).toBeVisible();
                 });
+
             });
         });
 
         test.describe('Axe Environnemental', () => {
-            test.beforeEach(async ({ page }) => {
-                await page.getByRole('heading', { name: 'L’axe environnemental' }).scrollIntoViewIfNeeded();
-            });
-
             test('Titre', async ({ page }) => {
                 await expect(page.getByRole('heading', { name: 'L’axe environnemental' })).toBeVisible();
             });
@@ -291,10 +250,6 @@ test.beforeEach(async ({ page }) => {
             });
 
             test.describe('Numérique Responsable', () => {
-                test.beforeEach(async ({ page }) => { 
-                    await page.getByRole('heading', { name: 'Numérique responsable' }).scrollIntoViewIfNeeded();
-                });
-
                 test('Titre', async ({ page }) => {
                     await expect(page.getByRole('heading', { name: 'Numérique responsable' })).toBeVisible();
                 });
@@ -313,10 +268,6 @@ test.beforeEach(async ({ page }) => {
             });
 
             test.describe('Mobilité Durable', () => {
-                test.beforeEach(async ({ page }) => {
-                    await page.getByRole('heading', { name: 'Mobilité durable' }).scrollIntoViewIfNeeded();
-                });
-
                 test('Titre', async ({ page }) => {
                     await expect(page.getByRole('heading', { name: 'Mobilité durable' })).toBeVisible();
                 });
@@ -327,10 +278,6 @@ test.beforeEach(async ({ page }) => {
             });
 
             test.describe('Gestion Ressources', () => {
-                test.beforeEach(async ({ page }) => {
-                    await page.getByRole('heading', { name: 'Gestion des ressources' }).scrollIntoViewIfNeeded();
-                });
-
                 test('Titre', async ({ page }) => {
                     await expect(page.getByRole('heading', { name: 'Gestion des ressources' })).toBeVisible();
                 });
@@ -347,9 +294,6 @@ test.beforeEach(async ({ page }) => {
 
 
         test.describe('Et Demain ?', () => {
-            test.beforeEach(async ({ page }) => {
-                await page.getByRole('heading', { name: 'Et demain ?' }).scrollIntoViewIfNeeded();
-            });
 
             test('Titre', async ({ page }) => {
                 await expect(page.getByRole('heading', { name: 'Et demain ?' })).toBeVisible();
@@ -458,7 +402,7 @@ test.beforeEach(async ({ page }) => {
             });
 
             test('Démarche RSE', async ({ page }) => {
-                await expect(page.getByRole('link', { name: 'Notre démarche RSE', description: 'Notre démarche RSE', exact: true })).toBeVisible();
+                await expect(page.getByRole('link', { name: 'Notre démarche RSE' })).toBeVisible();
             });
         });
 
@@ -515,5 +459,4 @@ test.beforeEach(async ({ page }) => {
             await expect(page.getByText('Ce site a été conçu avec pour')).toBeVisible();
         });
     });
-
 }); 

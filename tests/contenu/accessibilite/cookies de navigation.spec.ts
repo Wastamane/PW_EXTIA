@@ -1,4 +1,4 @@
-import { test } from '../fixtures';
+import { test } from '../../fixtures';
 import { BrowserContext, expect, Page } from '@playwright/test';
 
 async function Check_CookieWall_present(page: Page): Promise<void> {
