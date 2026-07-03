@@ -1,4 +1,4 @@
-import { test } from '../fixtures';
+import { test } from '../../../fixtures';
 import { expect, Page } from '@playwright/test';
 import { AxeBuilder } from '@axe-core/playwright'
 
