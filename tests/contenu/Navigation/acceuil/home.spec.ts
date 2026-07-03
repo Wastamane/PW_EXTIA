@@ -1,6 +1,6 @@
-import { test } from '../../fixtures'
+import { test } from '../../../fixtures'
 import { BrowserContext, expect, Page } from '@playwright/test';
-import { accepterCookies } from '../../utils/helpers';
+import { accepterCookies } from '../../../utils/helpers';
 
 test.describe('Accessibilité Lien - Home Page', () => {
     test.beforeEach(async ({ page, nav }) => {
