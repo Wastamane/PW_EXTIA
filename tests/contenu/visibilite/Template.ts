@@ -142,7 +142,7 @@ test.describe('Visibilité - Inside Extia page', () => {
             });
 
             test('Démarche RSE', async ({ page }) => {
-                await expect(page.getByRole('link', { name: 'Notre démarche RSE' })).toBeVisible();
+                await expect(page.getByRole('link', { name: 'Notre démarche RSE', description: 'Notre démarche RSE', exact: true })).toBeVisible();
             });
         });
 
