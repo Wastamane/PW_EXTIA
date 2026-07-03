@@ -23,6 +23,21 @@ test.describe('Acessibilité (wcag2a) - Level 1', () => {
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Notre Expertise', async ({ page, nav }) => {
+        await page.goto(nav.expertise);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Nos secteur', async ({ page, nav }) => {
+        await page.goto(nav.oursectors);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Nos poles d\'expertise', async ({ page, nav }) => {
+        await page.goto(nav.expertisecenters);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Nous rejoindre', async ({ page, nav }) => {
         await page.goto(nav.joinus);
         await ControlAccessibility(page, usedTag);
@@ -33,13 +48,53 @@ test.describe('Acessibilité (wcag2a) - Level 1', () => {
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Great Place to Work', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Entreprise Aprenante', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Comunauté Métier', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Notre ecosysteme', async ({ page, nav }) => {
         await page.goto(nav.ecosystem);
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Notre démarche RSE', async ({ page, nav }) => {
+        await page.goto(nav.sustainableadventure);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('L\'actu', async ({ page, nav }) => {
+        await page.goto(nav.blog);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Contact', async ({ page, nav }) => {
         await page.goto(nav.contact);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Mentions Légales', async ({ page, nav }) => {
+        await page.goto(nav.mentionlegales);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Politique de donnée', async ({ page, nav }) => {
+        await page.goto(nav.politiquedata);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Cookies', async ({ page, nav }) => {
+        await page.goto(nav.cookies);
         await ControlAccessibility(page, usedTag);
     });
 
@@ -58,6 +113,21 @@ test.describe('Acessibilité (wcag2aa) - Level 2', () => {
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Notre Expertise', async ({ page, nav }) => {
+        await page.goto(nav.expertise);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Nos secteur', async ({ page, nav }) => {
+        await page.goto(nav.oursectors);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Nos poles d\'expertise', async ({ page, nav }) => {
+        await page.goto(nav.expertisecenters);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Nous rejoindre', async ({ page, nav }) => {
         await page.goto(nav.joinus);
         await ControlAccessibility(page, usedTag);
@@ -68,13 +138,53 @@ test.describe('Acessibilité (wcag2aa) - Level 2', () => {
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Great Place to Work', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Entreprise Aprenante', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Comunauté Métier', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Notre ecosysteme', async ({ page, nav }) => {
         await page.goto(nav.ecosystem);
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Notre démarche RSE', async ({ page, nav }) => {
+        await page.goto(nav.sustainableadventure);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('L\'actu', async ({ page, nav }) => {
+        await page.goto(nav.blog);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Contact', async ({ page, nav }) => {
         await page.goto(nav.contact);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Mentions Légales', async ({ page, nav }) => {
+        await page.goto(nav.mentionlegales);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Politique de donnée', async ({ page, nav }) => {
+        await page.goto(nav.politiquedata);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Cookies', async ({ page, nav }) => {
+        await page.goto(nav.cookies);
         await ControlAccessibility(page, usedTag);
     });
 });
@@ -92,6 +202,21 @@ test.describe('Acessibilité (wcag2aaa) - Level 3', () => {
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Notre Expertise', async ({ page, nav }) => {
+        await page.goto(nav.expertise);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Nos secteur', async ({ page, nav }) => {
+        await page.goto(nav.oursectors);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Nos poles d\'expertise', async ({ page, nav }) => {
+        await page.goto(nav.expertisecenters);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Nous rejoindre', async ({ page, nav }) => {
         await page.goto(nav.joinus);
         await ControlAccessibility(page, usedTag);
@@ -102,13 +227,53 @@ test.describe('Acessibilité (wcag2aaa) - Level 3', () => {
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Great Place to Work', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Entreprise Aprenante', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Comunauté Métier', async ({ page, nav }) => {
+        await page.goto(nav.inside);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Notre ecosysteme', async ({ page, nav }) => {
         await page.goto(nav.ecosystem);
         await ControlAccessibility(page, usedTag);
     });
 
+    test('Notre démarche RSE', async ({ page, nav }) => {
+        await page.goto(nav.sustainableadventure);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('L\'actu', async ({ page, nav }) => {
+        await page.goto(nav.blog);
+        await ControlAccessibility(page, usedTag);
+    });
+
     test('Contact', async ({ page, nav }) => {
         await page.goto(nav.contact);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Mentions Légales', async ({ page, nav }) => {
+        await page.goto(nav.mentionlegales);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Politique de donnée', async ({ page, nav }) => {
+        await page.goto(nav.politiquedata);
+        await ControlAccessibility(page, usedTag);
+    });
+
+    test('Cookies', async ({ page, nav }) => {
+        await page.goto(nav.cookies);
         await ControlAccessibility(page, usedTag);
     });
 });
