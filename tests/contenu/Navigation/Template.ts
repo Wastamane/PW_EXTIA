@@ -2,6 +2,7 @@ import { test } from '../../fixtures'
 import { BrowserContext, expect, Page } from '@playwright/test';
 import { accepterCookies } from '../../utils/helpers';
 import { footerTests } from '../../commun/navigation/footer.spec';
+import { enteteTests } from '../../commun/navigation/entête.spec';
 
 test.describe('Accessibilité Lien - Home Page', () => {
     test.beforeEach(async ({ page, nav }) => {
@@ -10,8 +11,7 @@ test.describe('Accessibilité Lien - Home Page', () => {
         await accepterCookies(page);
     });
 
-    
-
+    enteteTests();
     footerTests();
 
     test.describe('Contenu Page', () => {
