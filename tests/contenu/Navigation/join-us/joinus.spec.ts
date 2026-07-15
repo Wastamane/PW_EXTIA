@@ -2,7 +2,7 @@ import { test } from '../../../fixtures'
 import { BrowserContext, expect, Page } from '@playwright/test';
 import { accepterCookies } from '../../../utils/helpers';
 
-test.describe('Accessibilité Lien - Home Page', () => {
+test.describe('Accessibilité Lien - Join Us Page', () => {
     test.beforeEach(async ({ page, nav }) => {
         await page.goto(nav.joinus);
         await page.locator('.loading').waitFor({

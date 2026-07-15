@@ -1,17 +1,18 @@
-import { test } from '../../fixtures'
+import { test } from '../../../fixtures'
 import { BrowserContext, expect, Page } from '@playwright/test';
-import { accepterCookies } from '../../utils/helpers';
-import { footerTests } from '../../commun/navigation/footer.spec';
+import { accepterCookies } from '../../../utils/helpers';
+import { footerTests } from '../../../commun/navigation/footer.spec';
+import { enteteTests } from '../../../commun/navigation/entête.spec';
+import { Nav } from '../../../fixtures/nav';
 
 test.describe('Accessibilité Lien - Home Page', () => {
     test.beforeEach(async ({ page, nav }) => {
-        await page.goto(nav.home);
+        await page.goto(nav.oursectors);
         await page.waitForLoadState('load');
         await accepterCookies(page);
     });
 
-    
-
+    enteteTests();
     footerTests();
 
     test.describe('Contenu Page', () => {
@@ -21,5 +22,6 @@ test.describe('Accessibilité Lien - Home Page', () => {
 // test.beforeEach(async ({ page }) => { });
 // test('Test', async ({ page }) => { });
 
-  
+
+ 
 });
